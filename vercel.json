@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js", // Change this to your entry point file if different
+      "use": "@vercel/node" // Specifies that this is a Node.js project
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js" // Specifies the default route to your entry point file
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production" // Set NODE_ENV to production
+  }
+}
