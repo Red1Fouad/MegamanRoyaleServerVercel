@@ -307,7 +307,7 @@ class Room {
 	this.lobbyTimerStart = undefined;
 	this.bulletCreate = [];
 	this.bulletDelete = [];
-	this.level = new Level(Math.floor(100 + (Math.random() * 8)));
+	this.level = new Level(Math.floor(100 + (Math.random() * 9)));
 	//this.updateInterval = setInterval(this.sendPackets,100);
 	this.startPackets();
   }
